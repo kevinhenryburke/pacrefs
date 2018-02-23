@@ -1,0 +1,676 @@
+[
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1519209989760,
+            "changeTime": 1519209989760,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1519209989760,
+            "changeTime": 1519209989760,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default",
+            "isDirectory": true,
+            "size": 512,
+            "modifiedTime": 1519391293488,
+            "changeTime": 1519391293488,
+            "contentHash": "5def0ba9b636183248ce115e75fdc031ed00cb48",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser.cls",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser.cls",
+            "isDirectory": false,
+            "size": 4384,
+            "modifiedTime": 1519405582000,
+            "changeTime": 1519405582591,
+            "contentHash": "b521d7b6390a678bee486eaec142eeda422a7d63",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser.cls-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser.cls-meta.xml",
+            "isDirectory": false,
+            "size": 192,
+            "modifiedTime": 1519210693559,
+            "changeTime": 1519210693559,
+            "contentHash": "9ac33f10ac927a186851656d94c5ac7ab7ce2854",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/aura",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/aura",
+            "isDirectory": true,
+            "size": 64,
+            "modifiedTime": 1519209989760,
+            "changeTime": 1519209989760,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs",
+            "isDirectory": true,
+            "size": 288,
+            "modifiedTime": 1519209993780,
+            "changeTime": 1519209993780,
+            "contentHash": "482aba1731d0a586e52ba05892f68b26d69ba4fe",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser_Test.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser_Test.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 3144,
+            "modifiedTime": 1519405830906,
+            "changeTime": 1519405830906,
+            "contentHash": "2242d78978a6bfd9f2b0b85d91884e6608be4257"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser_Test.cls-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/MetadataParser_Test.cls-meta.xml",
+            "isDirectory": false,
+            "size": 197,
+            "modifiedTime": 1519210726639,
+            "changeTime": 1519210726639,
+            "contentHash": "b8c4db1e09e41cdd3203301bc3ba7fcf61fae358",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/MetaDataUpload__c.object-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/MetaDataUpload__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 2213,
+            "modifiedTime": 1519302525614,
+            "changeTime": 1519302525614,
+            "contentHash": "d19964e091a210e075c2d3dfab61354160295459",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/buildArtifact__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/buildArtifact__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 596,
+            "modifiedTime": 1519302525614,
+            "changeTime": 1519302525614,
+            "contentHash": "b1bf4416abd474551e3d2f063f929160256f05e9",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/buildVersion__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/buildVersion__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 429,
+            "modifiedTime": 1519302525615,
+            "changeTime": 1519302525615,
+            "contentHash": "673ccefc09ca4fe7a100989176952d73fde9fd80",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/category__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/category__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 361,
+            "modifiedTime": 1519302525615,
+            "changeTime": 1519302525615,
+            "contentHash": "3ff7cd6780c0761207bb4d2621645dd0e1acb11f",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/fileLine__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/fileLine__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 349,
+            "modifiedTime": 1519302525615,
+            "changeTime": 1519302525615,
+            "contentHash": "0a2241402474610597fd636d9bcc3b6a80ed414d",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/metadataType__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/metadataType__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 369,
+            "modifiedTime": 1519302525615,
+            "changeTime": 1519302525615,
+            "contentHash": "4b0d26c2bfb3433749785dcabeca4d628acd50b7",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/packageComponentParent__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/packageComponentParent__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 738,
+            "modifiedTime": 1519302525615,
+            "changeTime": 1519302525615,
+            "contentHash": "43cafdafda7482432c1349aac823f01091544e0c",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/packageComponent__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/packageComponent__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 554,
+            "modifiedTime": 1519302525616,
+            "changeTime": 1519302525616,
+            "contentHash": "24c935695cdc529468efad40cb8fb4f5257ceab7",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/rawText__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/rawText__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 493,
+            "modifiedTime": 1519302525616,
+            "changeTime": 1519302525616,
+            "contentHash": "252b8db66d435e5dbeec81110d4641a51e7af14c",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts/MetaDataUpload__c-MetaDataUpload Layout.layout-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts/MetaDataUpload__c-MetaDataUpload Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 3232,
+            "modifiedTime": 1519405241608,
+            "changeTime": 1519405241608,
+            "contentHash": "b930cd61285a673ea2cefc7fa328686cea4a5fd4",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Admin.profile-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Admin.profile-meta.xml",
+            "isDirectory": false,
+            "size": 20647,
+            "modifiedTime": 1519405241632,
+            "changeTime": 1519405241632,
+            "contentHash": "ffdd92b64e92d3de134976447e39347af3ad2659",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 6921,
+            "modifiedTime": 1519405241640,
+            "changeTime": 1519405241640,
+            "contentHash": "14c38a1f403ab990661f9b7fe932e15725f1459e",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 6921,
+            "modifiedTime": 1519405241648,
+            "changeTime": 1519405241648,
+            "contentHash": "14c38a1f403ab990661f9b7fe932e15725f1459e",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
+            "isDirectory": false,
+            "size": 7259,
+            "modifiedTime": 1519405241652,
+            "changeTime": 1519405241652,
+            "contentHash": "120cf674c91b832f2023a0ee74e5665a4a98b1cc",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1519391293460,
+            "changeTime": 1519391293460,
+            "contentHash": "94e513ea609c5a8aa402cbe9f9b06e69ff5672a9",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1519304216394,
+            "changeTime": 1519304216394,
+            "contentHash": "c44fc4e3e86f137dd51e04bee038540eba80e9db",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields",
+            "isDirectory": true,
+            "size": 352,
+            "modifiedTime": 1519405241596,
+            "changeTime": 1519405241596,
+            "contentHash": "d0a9bcbdfe971e25d1e7b873953a30091b2b87cc",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1519304216397,
+            "changeTime": 1519304216397,
+            "contentHash": "9a2a5b7252d3543c24d0ce890849dbef3f277c62",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/profiles",
+            "isDirectory": true,
+            "size": 192,
+            "modifiedTime": 1519302525653,
+            "changeTime": 1519302525653,
+            "contentHash": "9c367b0e719eb8c48c5b0d9cbfb5f580a4bd6717",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/GrepLine__c.object-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/GrepLine__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 2195,
+            "modifiedTime": 1519304216395,
+            "changeTime": 1519304216395,
+            "contentHash": "b9ac6ca9eb3695596bd99056c622d965297e4366",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields/fileLine__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields/fileLine__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 404,
+            "modifiedTime": 1519304216395,
+            "changeTime": 1519304216395,
+            "contentHash": "4fe0b3e2732703fb8443b68680f4a73f4a109a44",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts/GrepLine__c-GrepLine Layout.layout-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/layouts/GrepLine__c-GrepLine Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 2224,
+            "modifiedTime": 1519391293487,
+            "changeTime": 1519391293487,
+            "contentHash": "53472e4146f3083576d7f4ce54bfe28f057f2bf6",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1519304216395,
+            "changeTime": 1519304216395,
+            "contentHash": "ee907e02de9a096894fc1a395d2cea1a7154a18c",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1519391293464,
+            "changeTime": 1519391293464,
+            "contentHash": "700eb56cad349ee0442f40741c527d0c4fa28e2d",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/ProcessAnalysisRecords.cls",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/ProcessAnalysisRecords.cls",
+            "isDirectory": false,
+            "size": 838,
+            "modifiedTime": 1519402936000,
+            "changeTime": 1519400819115,
+            "contentHash": "f01b0995e09244d8c5626e8bde813a02288197d6",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/ProcessAnalysisRecords.cls-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/ProcessAnalysisRecords.cls-meta.xml",
+            "isDirectory": false,
+            "size": 200,
+            "modifiedTime": 1519312423827,
+            "changeTime": 1519312423827,
+            "contentHash": "19d7d96a8e4ecefc76586d6b31c05f10c6a6ca3f",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/DeleteAnalysisRecords.cls",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/DeleteAnalysisRecords.cls",
+            "isDirectory": false,
+            "size": 421,
+            "modifiedTime": 1519314314547,
+            "changeTime": 1519314314547,
+            "contentHash": "cf9d589dc7142c7a74c2a1011800d80e67e68497",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/DeleteAnalysisRecords.cls-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/DeleteAnalysisRecords.cls-meta.xml",
+            "isDirectory": false,
+            "size": 199,
+            "modifiedTime": 1519314235027,
+            "changeTime": 1519314235027,
+            "contentHash": "ee55e9fba1bef668408cc7a3eced5d6efe723fe9",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/listViews/MDU.listView-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/listViews/MDU.listView-meta.xml",
+            "isDirectory": false,
+            "size": 431,
+            "modifiedTime": 1519391293462,
+            "changeTime": 1519391293462,
+            "contentHash": "10301a8a51a8e01f1986b01e376af6dfc950d81c",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields/Processed__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/GrepLine__c/fields/Processed__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 324,
+            "modifiedTime": 1519391293464,
+            "changeTime": 1519391293464,
+            "contentHash": "f625121e38b6cf46722ac4a978761f0566de2eff",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetadataTypes.report-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetadataTypes.report-meta.xml",
+            "isDirectory": false,
+            "size": 800,
+            "modifiedTime": 1519391293467,
+            "changeTime": 1519391293467,
+            "contentHash": "c5a18b1b65c39d22aef8dc3b423f3ab4dbcd0191",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/GrepLineTotal.report-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/GrepLineTotal.report-meta.xml",
+            "isDirectory": false,
+            "size": 613,
+            "modifiedTime": 1519391293469,
+            "changeTime": 1519391293469,
+            "contentHash": "bff8a2ca2e6b409ef10f65440266ce58694ecdb2",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_By_Build_Artifact.report-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_By_Build_Artifact.report-meta.xml",
+            "isDirectory": false,
+            "size": 2860,
+            "modifiedTime": 1519391293475,
+            "changeTime": 1519391293475,
+            "contentHash": "cc852e18856a750d148d5280ea4ea0f4c679443b",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_By_Package_Reference.report-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_By_Package_Reference.report-meta.xml",
+            "isDirectory": false,
+            "size": 3096,
+            "modifiedTime": 1519391293480,
+            "changeTime": 1519391293480,
+            "contentHash": "c8ff09c6afa4b3fe8558a80f563ff678d849bd2b",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_with_Permissions_and_XML.report-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public/MetaData_with_Permissions_and_XML.report-meta.xml",
+            "isDirectory": false,
+            "size": 1580,
+            "modifiedTime": 1519391293483,
+            "changeTime": 1519391293483,
+            "contentHash": "3cd95062bb1389a0a4fa4096736c12ae619fb656",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs/GrepLine__c.tab-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs/GrepLine__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 223,
+            "modifiedTime": 1519391293488,
+            "changeTime": 1519391293488,
+            "contentHash": "f0ae88e485a2396b5486e813ed654a4e24276353",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs/MetaDataUpload__c.tab-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs/MetaDataUpload__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 228,
+            "modifiedTime": 1519391293489,
+            "changeTime": 1519391293489,
+            "contentHash": "08526489246c412385e94eb9471ba71ba0637a18",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/listViews",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/listViews",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1519391293462,
+            "changeTime": 1519391293462,
+            "contentHash": "686f228528c6a511fbf45e572593a125ceb22b76",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports/unfiled$public",
+            "isDirectory": true,
+            "size": 224,
+            "modifiedTime": 1519391293482,
+            "changeTime": 1519391293482,
+            "contentHash": "70ee7f96f395a8d379edb3cfea2961f32d5fc3e6",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/reports",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1519391293466,
+            "changeTime": 1519391293466,
+            "contentHash": "36b4ca4c5731877fa01de2265bc0e080036f21b0",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/tabs",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1519391293489,
+            "changeTime": 1519391293489,
+            "contentHash": "59e7e9a1ebb98f0d34632509e2d9b91463dc18a0",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/Ignore_In_Reports__c.field-meta.xml",
+        {
+            "sourcePath": "/Users/kevin.burke/Google Drive/Documents Sync/clients/Unilever/TPM/pacrefs/pacrefs/force-app/main/default/objects/MetaDataUpload__c/fields/Ignore_In_Reports__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 634,
+            "modifiedTime": 1519405241596,
+            "changeTime": 1519405241596,
+            "contentHash": "65f06ad0a3d85529129ca47e1f657b0fdb2aa86e",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ]
+]

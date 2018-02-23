@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>packageComponent__c</fullName>
+    <description>The component in the managed package being referenced</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The component in the managed package being referenced</inlineHelpText>
+    <label>packageComponent</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

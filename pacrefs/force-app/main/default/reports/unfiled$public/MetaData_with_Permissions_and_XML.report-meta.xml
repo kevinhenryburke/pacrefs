@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>MetaDataUpload__c.metadataType__c</field>
+    </columns>
+    <columns>
+        <field>MetaDataUpload__c.buildArtifact__c</field>
+    </columns>
+    <columns>
+        <field>MetaDataUpload__c.packageComponent__c</field>
+    </columns>
+    <columns>
+        <field>MetaDataUpload__c.packageComponentParent__c</field>
+    </columns>
+    <columns>
+        <field>MetaDataUpload__c.rawText__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>MetaDataUpload__c.metadataType__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>permissionset</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.metadataType__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>xml</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MetaData with Permissions and XML</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MetaDataUpload__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

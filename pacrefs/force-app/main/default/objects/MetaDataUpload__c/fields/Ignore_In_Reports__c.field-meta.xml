@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ignore_In_Reports__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>checked if the field should be ignored in some reports, for example text class references or indeterminate items</description>
+    <externalId>false</externalId>
+    <inlineHelpText>checked if the field should be ignored in some reports, for example text class references or indeterminate items</inlineHelpText>
+    <label>Ignore In Reports</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

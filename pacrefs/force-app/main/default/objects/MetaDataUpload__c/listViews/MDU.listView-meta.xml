@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDU</fullName>
+    <columns>NAME</columns>
+    <columns>buildArtifact__c</columns>
+    <columns>metadataType__c</columns>
+    <columns>packageComponent__c</columns>
+    <columns>packageComponentParent__c</columns>
+    <columns>rawText__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>MDU</label>
+</ListView>
