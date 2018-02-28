@@ -55,6 +55,12 @@
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.Ignore_In_Reports__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

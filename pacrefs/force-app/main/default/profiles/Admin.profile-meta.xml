@@ -29,6 +29,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>MetaDataUpload__c.CommonBuildArtifact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MetaDataUpload__c.CommonPackageComponent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MetaDataUpload__c.Custom_Artifact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>MetaDataUpload__c.Ignore_In_Reports__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -76,6 +91,9 @@
         <layout>GrepLine__c-GrepLine Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>MetaDataJobRunner__c-MetaDataJobRunner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>MetaDataUpload__c-MetaDataUpload Layout</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -85,6 +103,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>GrepLine__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>MetaDataJobRunner__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

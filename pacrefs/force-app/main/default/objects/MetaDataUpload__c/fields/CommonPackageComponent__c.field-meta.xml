@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommonPackageComponent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this package component common to old and new builds</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is this package component common to old and new builds</inlineHelpText>
+    <label>CommonPackageComponent</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -8,11 +8,13 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>MetaDataUpload__c.buildArtifact__c</groupingColumn>
+        <groupingColumn>MetaDataUpload__c.Custom_Artifact__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>MetaDataUpload__c.metadataType__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -49,22 +51,37 @@
             <operator>notContain</operator>
             <value>xml</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.Ignore_In_Reports__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.packageComponent__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ACCL</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <aggregateType>RowCount</aggregateType>
         <dateGranularity>Day</dateGranularity>
-        <field>MetaDataUpload__c.buildArtifact__c</field>
+        <field>MetaDataUpload__c.Custom_Artifact__c</field>
         <sortByName>RowCount</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
     </groupingsDown>
     <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
         <dateGranularity>Day</dateGranularity>
         <field>MetaDataUpload__c.metadataType__c</field>
-        <sortOrder>Asc</sortOrder>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
     </groupingsDown>
-    <name>MetaData By Build Artifact</name>
+    <name>TPM Artifacts With ACCL References</name>
     <params>
         <name>co</name>
         <value>1</value>

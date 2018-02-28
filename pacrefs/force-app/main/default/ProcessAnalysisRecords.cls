@@ -6,7 +6,7 @@ global class ProcessAnalysisRecords implements Database.Batchable<sObject>
 
 	global Database.QueryLocator start(Database.BatchableContext BC)
 	{
-        String query = 'SELECT Id,fileLine__c FROM GrepLine__c ';
+        String query = 'SELECT Id,fileLine__c FROM GrepLine__c where processed__c = false';
         return Database.getQueryLocator(query);
     }
 
@@ -25,6 +25,11 @@ global class ProcessAnalysisRecords implements Database.Batchable<sObject>
             mdu.buildVersion__c = version;
         }
         insert listmdu;
+        for ( GrepLine__c gl : scope)
+        {
+            gl.processed__c = true;
+        }
+        update scope;
     }  
 
     global void finish(Database.BatchableContext BC)

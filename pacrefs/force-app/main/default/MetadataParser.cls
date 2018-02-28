@@ -4,7 +4,8 @@ public class MetadataParser {
     }
 
     public static String PACKAGE_PREFIX = 'ACCL';
-    public static String[] TERMINATORS = new String[] {'__c','.'};
+    public static String CUSTOMER_PREFIX = 'TPM';
+    public static String[] TERMINATORS = new String[] {'__c','.',' ','(',')','<','$','/'};
 
     public String metadataType;
     public String category;
@@ -17,8 +18,18 @@ public class MetadataParser {
         List<MetaDataUpload__c> listmdu = new List<MetaDataUpload__c>();
 
         this.rawText = s.substringAfter(':');
-        this.metadataType = s.substring(2).substringBetween('.',':');
+
         this.buildArtifact = s.substring(2).substringBetween('/','.');
+        this.metadataType = s.substring(2).substringBetween('.',':');
+        while (this.metadataType != null && this.metadataType.contains('.')) {
+            this.buildArtifact += '.' + this.metadataType.substringBefore('.');
+            this.metadataType = this.metadataType.substringAfter('.');
+        }
+
+        if (getMetadataTypeOverride(s, this.metadataType) != null) {
+            this.metadataType = getMetadataTypeOverride(s, this.metadataType);
+        }
+
         this.category = '';
 
         // find by tag field
@@ -39,7 +50,7 @@ public class MetadataParser {
         else {
         // find by PACKAGE_PREFIX
             String rawNormal = this.rawText.normalizeSpace();
-            List<String> rawSplit = splitByPrefix(rawNormal, PACKAGE_PREFIX);
+            List<String> rawSplit = splitByPrefix(rawNormal, PACKAGE_PREFIX, CUSTOMER_PREFIX);
             for (String packageComponent : rawSplit)
             {
                 MetaDataUpload__c mdu = new MetaDataUpload__c();
@@ -60,16 +71,34 @@ public class MetadataParser {
         return listmdu;
     }
 
-    public static List<String> splitByPrefix (String s, String packagePrefix)
+    public static List<String> splitByPrefix (String s, String packagePrefix, String companyPrefix)
     {
         List<String> retArray = new List<String>{};
-        String rawNormal = s.normalizeSpace().substringAfter(PACKAGE_PREFIX);
-        String[] rawSplit = rawNormal.split(PACKAGE_PREFIX);
+        String remains = s.normalizeSpace();
+        Boolean done = false;
 
-        for (Integer i = 0; i < rawSplit.size(); i++)
-        {
-            retArray.add(PACKAGE_PREFIX + rawSplit[i]);
+        while (!done) {
+            Integer packagePrefixIndex = remains.indexOf(packagePrefix);
+            Integer companyPrefixIndex = remains.indexOf(companyPrefix);
+            Integer firstIndex = -1; 
+            
+            if (packagePrefixIndex > -1){
+                firstIndex = packagePrefixIndex;
+            }
+            if (companyPrefixIndex > -1 && (packagePrefixIndex == -1 || companyPrefixIndex < packagePrefixIndex)){
+                firstIndex = companyPrefixIndex;
+            }
+
+            if (firstIndex > -1) {
+                String firstPrefix = (packagePrefixIndex == firstIndex)? packagePrefix : companyPrefix;
+                remains = remains.substringAfter(firstPrefix);
+                retArray.add(firstPrefix + stripToFirstReference(remains,TERMINATORS));
+            }
+            else {
+                done = true;
+            }
         }
+
         return retArray;
     }
 
@@ -79,7 +108,11 @@ public class MetadataParser {
         String retString = s.normalizeSpace();
         Integer indexTerminator = s.indexOf(terminator);
         if (indexTerminator > 0) {
-            retString = s.substring(0,indexTerminator) + terminator;
+            retString = s.substring(0,indexTerminator);
+            if (terminator == '__c')
+            {
+                retString += terminator;
+            }
         }
         return retString;
     }
@@ -94,6 +127,10 @@ public class MetadataParser {
             {
                 terminated = iterated;
             }
+        }
+        if (terminated != null && terminated.length() > 50)
+        {
+            return terminated.substring(0,50);
         }
         return terminated;
     }
@@ -111,6 +148,17 @@ public class MetadataParser {
             retBoolean = true;
         }
         return retBoolean;    
+    }
+
+    public static String getMetadataTypeOverride(String s, String metadataType)
+    {
+        if (s.contains('errorConditionFormula') && metadataType == 'object') {
+            return 'validationRule';
+        }
+        if (s.contains('fullName') && metadataType == 'object') {
+            return 'customField';
+        }
+        return null;
     }
 
 }
