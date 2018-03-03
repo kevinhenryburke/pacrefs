@@ -32,6 +32,12 @@ ClearGrepLines
             dar.query = 'select id from MetaDataUpload__c';
             ID batchprocessid = Database.executeBatch(dar);
         }
+        if (mdjr.JobName__c == 'MatchCommonArtifacts')
+        {
+            MatchCommonArtifacts mca = new MatchCommonArtifacts();
+            ID batchprocessid = Database.executeBatch(mca);
+        }
+
     }
 
 }

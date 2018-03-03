@@ -46,6 +46,14 @@ public with sharing class MetadataParser_Test {
         System.assertEquals('customField',mdu.metadataType__c);
     }
 
+    @IsTest public static void parseSingleField_pluralLabel ()
+    {
+        String REPORT_TYPE_SAMPLE = './objects/some.object:        <pluralLabel>TPM_Dummy_Custom_profile__c</pluralLabel>';
+        MetadataParser mdp = new MetadataParser();
+        List<MetaDataUpload__c> listmdu = mdp.parse(REPORT_TYPE_SAMPLE);
+        System.assertEquals(0, listmdu.size());
+    }
+
     @IsTest public static void parseSingleField_classdec ()
     {
         String REPORT_TYPE_SAMPLE = './classes/TPM_ProductFilterSchedulableBatchTest.cls:        TPM_ProductFilterSchedulable sch = new TPM_ProductFilterSchedulable();';
@@ -63,6 +71,23 @@ public with sharing class MetadataParser_Test {
         MetaDataUpload__c mdu = mdp.parse(REPORT_TYPE_SAMPLE)[0];
         System.assertEquals('TPM_5678901234567890123456789012345678901234567890',mdu.packageComponent__c);
     }
+
+    @IsTest public static void parseSingleField_cls_meta_xml ()
+    {
+        String REPORT_TYPE_SAMPLE = './classes/TPM_PromotionTriggerTest.cls-meta.xml:        <namespace>ACCL</namespace>';
+        MetadataParser mdp = new MetadataParser();
+        List<MetaDataUpload__c> listmdu = mdp.parse(REPORT_TYPE_SAMPLE);
+        System.assertEquals(0, listmdu.size());
+    }
+
+    @IsTest public static void parseSingleField_cls_comment ()
+    {
+        String REPORT_TYPE_SAMPLE = './classes/TPM_PromotionTriggerTest.cls:  /* comment line */';
+        MetadataParser mdp = new MetadataParser();
+        List<MetaDataUpload__c> listmdu = mdp.parse(REPORT_TYPE_SAMPLE);
+        System.assertEquals(0, listmdu.size());
+    }
+
 
     @IsTest public static void parseMultiple ()
     {

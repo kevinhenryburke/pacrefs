@@ -5,7 +5,7 @@ public class MetadataParser {
 
     public static String PACKAGE_PREFIX = 'ACCL';
     public static String CUSTOMER_PREFIX = 'TPM';
-    public static String[] TERMINATORS = new String[] {'__c','.',' ','(',')','<','$','/'};
+    public static String[] TERMINATORS = new String[] {'__c',',',' ','(',')','<','$','/'};
 
     public String metadataType;
     public String category;
@@ -16,6 +16,8 @@ public class MetadataParser {
 
     public List<MetaDataUpload__c> parse (String s) {
         List<MetaDataUpload__c> listmdu = new List<MetaDataUpload__c>();
+
+        /* Split the line into the file info (first part) and the metadata file text (second part) */
 
         this.rawText = s.substringAfter(':');
 
@@ -32,43 +34,71 @@ public class MetadataParser {
 
         this.category = '';
 
-        // find by tag field
-        if (this.rawText.contains('<field>')) {
-            String fieldText = this.rawText.substringBetween('<field>','</field>');
-            if (fieldText.contains('.')) {
-                this.packageComponentParent = fieldText.substringBefore('.');
-                this.packageComponent = fieldText.substringAfter('.');
-            }
-            else {
-                this.packageComponent = fieldText;
-            }
-            MetaDataUpload__c mdu = new MetaDataUpload__c();
-            mdu.packageComponent__c = this.packageComponent;
-            mdu.packageComponentParent__c = this.packageComponentParent;
-            listmdu.add(mdu);
-        }
-        else {
-        // find by PACKAGE_PREFIX
-            String rawNormal = this.rawText.normalizeSpace();
-            List<String> rawSplit = splitByPrefix(rawNormal, PACKAGE_PREFIX, CUSTOMER_PREFIX);
-            for (String packageComponent : rawSplit)
-            {
+        if (this.metadataType == 'object')
+        {
+            // special processing for object metadata
+            if (!parseObjectMetadataType()) {
+                // object metadata does not reference a package component
                 MetaDataUpload__c mdu = new MetaDataUpload__c();
-                mdu.packageComponent__c = stripToFirstReference(packageComponent,TERMINATORS);
+                mdu.rawText__c = this.rawText;
+                mdu.metadataType__c = this.metadataType;
+                mdu.buildArtifact__c = this.buildArtifact;
+                mdu.category__c = this.category;
+                mdu.ignore_in_reports__c = ignore(mdu);
                 listmdu.add(mdu);
             }
         }
+        else {
+            // find by tag <field>
+            if (this.rawText.contains('<field>')) {
+                String fieldText = this.rawText.substringBetween('<field>','</field>');
+                if (fieldText.contains('.')) {
+                    this.packageComponentParent = fieldText.substringBefore('.');
+                    this.packageComponent = fieldText.substringAfter('.');
+                }
+                else {
+                    this.packageComponent = fieldText;
+                }
+                MetaDataUpload__c mdu = new MetaDataUpload__c();
+                mdu.packageComponent__c = this.packageComponent;
+                mdu.packageComponentParent__c = this.packageComponentParent;
+                listmdu.add(mdu);
+            }
+            else {
+            // find by PACKAGE_PREFIX
+                String rawNormal = this.rawText.normalizeSpace();
+                List<String> rawSplit = splitByPrefix(rawNormal, PACKAGE_PREFIX, CUSTOMER_PREFIX);
+                for (String packageComponent : rawSplit)
+                {
+                    MetaDataUpload__c mdu = new MetaDataUpload__c();
+                    mdu.packageComponent__c = stripToFirstReference(packageComponent,TERMINATORS);
+                    listmdu.add(mdu);
+                }
+            }
+
+            for (MetaDataUpload__c mdu : listmdu)
+            {
+                mdu.rawText__c = this.rawText;
+                mdu.metadataType__c = this.metadataType;
+                mdu.buildArtifact__c = this.buildArtifact;
+                mdu.category__c = this.category;
+                mdu.ignore_in_reports__c = ignore(mdu);
+            }
+
+        }
+
+
+
+        List<MetaDataUpload__c> filtered = new List<MetaDataUpload__c>();
 
         for (MetaDataUpload__c mdu : listmdu)
         {
-            mdu.rawText__c = this.rawText;
-            mdu.metadataType__c = this.metadataType;
-            mdu.buildArtifact__c = this.buildArtifact;
-            mdu.category__c = this.category;
-            mdu.ignore_in_reports__c = ignore(mdu);
+            if (!filter(mdu)) {
+                filtered.add(mdu);
+            }
         }
 
-        return listmdu;
+        return filtered;
     }
 
     public static List<String> splitByPrefix (String s, String packagePrefix, String companyPrefix)
@@ -150,16 +180,85 @@ public class MetadataParser {
         return retBoolean;    
     }
 
+    public static Boolean filter (MetaDataUpload__c mdu)
+    {
+        Boolean retBoolean = false;    
+        // remove meta data references
+        if (mdu.buildArtifact__c.contains('cls-meta') || mdu.buildArtifact__c.contains('page-meta') || mdu.buildArtifact__c.contains('trigger-meta'))
+        {
+            retBoolean = true;
+        }
+        // remove comments
+        if (mdu.rawText__c.contains('//') || mdu.rawText__c.contains('*/') || mdu.rawText__c.contains('/*') || mdu.rawText__c.contains('<!-') || mdu.rawText__c.contains('-->')  )
+        {
+            retBoolean = true;
+        }
+        return retBoolean;    
+    }
+
     public static String getMetadataTypeOverride(String s, String metadataType)
     {
-        if (s.contains('errorConditionFormula') && metadataType == 'object') {
-            return 'validationRule';
-        }
-        if (s.contains('fullName') && metadataType == 'object') {
-            return 'customField';
-        }
         return null;
     }
+
+    public boolean parseObjectMetadataType()
+    {
+        String s = this.rawText;
+        String objectName = this.buildArtifact;
+
+        if (s.contains('<errorConditionFormula>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<errorConditionFormula>','</errorConditionFormula>');
+            this.metadataType = 'validationRule'; 
+        }
+        if (s.contains('<customTabListAdditionalFields>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<customTabListAdditionalFields>','</customTabListAdditionalFields>');
+            this.metadataType = 'searchLayout'; 
+        }
+        if (s.contains('<lookupFilterFields>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<lookupFilterFields>','</lookupFilterFields>');
+            this.metadataType = 'lookupFilter'; 
+        }
+        if (s.contains('<searchFilterFields>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<searchFilterFields>','</searchFilterFields>');
+            this.metadataType = 'searchLayout'; 
+        }
+        if (s.contains('<columns>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<columns>','</columns>');
+            this.metadataType = 'listView'; 
+        }
+        if (s.contains('<field>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<field>','</field>');
+            this.metadataType = 'lookup'; 
+        }
+        if (s.contains('<fullName>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<fullName>','</fullName>');
+            this.metadataType = 'customField'; 
+        }
+        if (s.contains('<referenceTo>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<referenceTo>','</referenceTo>');
+            this.metadataType = 'lookup'; 
+        }
+        if (s.contains('<valueSetName>')) {
+            this.buildArtifact = objectName + '.' + s.substringBetween('<valueSetName>','</valueSetName>');
+            this.metadataType = 'picklist'; 
+        }
+        if (s.contains('<label>')) {
+            return true;
+        }
+        if (s.contains('<content>')) {
+            return true;
+        }
+        if (s.contains('<errorDisplayField>')) {
+            return true;
+        }
+        if (s.contains('<pluralLabel>')) {
+            return true;
+        }
+
+
+        return false;
+    }
+
 
 }
 

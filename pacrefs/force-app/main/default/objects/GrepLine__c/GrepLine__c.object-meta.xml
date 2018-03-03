@@ -52,7 +52,6 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>GrepLine</label>
     <nameField>
         <displayFormat>GL-{0000000}</displayFormat>
