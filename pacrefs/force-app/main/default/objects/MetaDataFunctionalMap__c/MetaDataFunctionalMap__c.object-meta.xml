@@ -43,22 +43,23 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Maps metadata items in TPM build to Functional Areas</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>MetaDataJobRunner</label>
+    <label>MetaDataFunctionalMap</label>
     <nameField>
-        <displayFormat>MDJR-{00000}</displayFormat>
-        <label>MetaDataJobRunner Name</label>
+        <displayFormat>MDFM-{000000}</displayFormat>
+        <label>MetaDataFunctionalMap Name</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>MetaDataJobRunners</pluralLabel>
+    <pluralLabel>MetaDataFunctionalMaps</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

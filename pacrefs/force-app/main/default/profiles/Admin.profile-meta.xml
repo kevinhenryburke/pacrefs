@@ -5,6 +5,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>MatchCommonArtifacts</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>MetadataParser</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -16,6 +20,10 @@
         <apexClass>ProcessAnalysisRecords</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>SetFunctionalArea</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -25,6 +33,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>GrepLine__c.fileLine__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MetaDataFunctionalMap__c.CountrySpecific__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -91,6 +104,9 @@
         <layout>GrepLine__c-GrepLine Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>MetaDataFunctionalMap__c-MetaDataFunctionalMap Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>MetaDataJobRunner__c-MetaDataJobRunner Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -111,6 +127,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>MetaDataFunctionalMap__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>MetaDataJobRunner__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -123,6 +148,10 @@
         <object>MetaDataUpload__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <tabVisibilities>
+        <tab>MetaDataFunctionalMap__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>

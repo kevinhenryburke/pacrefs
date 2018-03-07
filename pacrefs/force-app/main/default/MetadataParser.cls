@@ -259,24 +259,15 @@ public class MetadataParser {
         return false;
     }
 
+    public static Map<String,String> populateFunctionalMap () {
+        Map<String,String> configureMap = new Map<String,String>();
+        List<MetaDataFunctionalMap__c> listMDFM = [select CountrySpecific__c, BuildArtifact__c, FunctionalArea__c from MetaDataFunctionalMap__c];
+
+        for (MetaDataFunctionalMap__c mdfm : listMDFM) {
+            configureMap.put(mdfm.BuildArtifact__c, mdfm.FunctionalArea__c);
+        }
+        return configureMap;
+    }
+
 
 }
-
-
-
-
-
-/* 
-
-    // Some helper variables to fix locations. If for example we have the string
-    // ./reportTypes/Account_with_Applications.reportType:
-    // then we need variable to identify the last : . and / to populate the class variables.
-    // TODO may not need.
-    public Integer fileNameEndLocation;
-    public Integer fileTypeSeparatorLocation;
-    public Integer directorySeparatorLocation;
-        mdp.fileNameEndLocation = s.indexOf(':');
-        mdp.fileTypeSeparatorLocation = s.substring(2).indexOf('.') + 2;
-        mdp.directorySeparatorLocation = s.substring(2).indexOf('/') + 2;
-
-*/

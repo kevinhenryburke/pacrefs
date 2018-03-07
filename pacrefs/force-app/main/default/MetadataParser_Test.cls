@@ -138,6 +138,19 @@ public with sharing class MetadataParser_Test {
         System.assert(mdu.ignore_in_reports__c);
     }
 
+    @IsTest public static void populateFunctionalMap () {
+
+        MetaDataFunctionalMap__c mdfm1 = new MetaDataFunctionalMap__c(BuildArtifact__c = 'A1', FunctionalArea__c = 'F1' );
+        MetaDataFunctionalMap__c mdfm2 = new MetaDataFunctionalMap__c(BuildArtifact__c = 'A2', FunctionalArea__c = 'F2' );
+        insert mdfm1;
+        insert mdfm2;
+
+        Map<String,String> configureMap = MetadataParser.populateFunctionalMap();
+        System.assertEquals('F1', configureMap.get('A1'));
+        System.assertEquals('F2', configureMap.get('A2'));
+        System.assert(configureMap.get('A9') == null);
+    }
+
 
     
 

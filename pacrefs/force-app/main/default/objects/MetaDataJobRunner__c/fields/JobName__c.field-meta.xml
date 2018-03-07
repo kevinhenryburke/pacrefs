@@ -26,9 +26,19 @@
                 <label>ClearMetaDataUploads</label>
             </value>
             <value>
-                <fullName>ClearGrepLines</fullName>
+                <fullName>ClearStaging</fullName>
                 <default>false</default>
-                <label>ClearGrepLines</label>
+                <label>ClearStaging</label>
+            </value>
+            <value>
+                <fullName>SetFunctionalArea</fullName>
+                <default>false</default>
+                <label>SetFunctionalArea</label>
+            </value>
+            <value>
+                <fullName>MatchCommonArtifacts</fullName>
+                <default>false</default>
+                <label>MatchCommonArtifacts</label>
             </value>
         </valueSetDefinition>
     </valueSet>

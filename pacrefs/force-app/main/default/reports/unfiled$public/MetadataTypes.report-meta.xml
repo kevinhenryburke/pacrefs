@@ -3,6 +3,20 @@
     <columns>
         <field>CUST_NAME</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>MetaDataUpload__c.Ignore_In_Reports__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.packageComponent__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ACCL</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

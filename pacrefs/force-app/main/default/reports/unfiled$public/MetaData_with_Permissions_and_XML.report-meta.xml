@@ -31,6 +31,12 @@
             <operator>notContain</operator>
             <value>xml</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>MetaDataUpload__c.packageComponent__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value/>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>MetaData with Permissions and XML</name>

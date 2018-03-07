@@ -1,10 +1,5 @@
 trigger MetaDataJobRunner_InsertTrigger on MetaDataJobRunner__c (before insert) {
-/*
-V3Process
-V4Process
-ClearMetaDataUploads
-ClearGrepLines    
-*/
+
     for (MetaDataJobRunner__c mdjr : Trigger.new)
     {
         if (mdjr.JobName__c == 'V3Process')
@@ -19,7 +14,7 @@ ClearGrepLines
             par.version = 'V4';
             ID batchprocessid = Database.executeBatch(par);
         }
-        if (mdjr.JobName__c == 'ClearGrepLines')
+        if (mdjr.JobName__c == 'ClearStaging')
         {
             DeleteAnalysisRecords dar = new DeleteAnalysisRecords();
             dar.query = 'select id from GrepLine__c';
@@ -36,6 +31,11 @@ ClearGrepLines
         {
             MatchCommonArtifacts mca = new MatchCommonArtifacts();
             ID batchprocessid = Database.executeBatch(mca);
+        }
+        if (mdjr.JobName__c == 'SetFunctionalArea')
+        {
+            SetFunctionalArea sfa = new SetFunctionalArea();
+            ID batchprocessid = Database.executeBatch(sfa);
         }
 
     }

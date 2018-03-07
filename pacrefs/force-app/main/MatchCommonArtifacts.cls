@@ -7,9 +7,9 @@ global class MatchCommonArtifacts implements Database.Batchable<sObject>
         Set<String> buildArtifactsV4 = new Set<String>();
 
         AggregateResult[] arBuildArtifactsV3
-          = [SELECT buildArtifact__c from MetaDataUpload__c where buildVersion__c = 'V3' and Ignore_In_Reports__c = false and metadatatype__c ='md' group by buildArtifact__c];
+          = [SELECT buildArtifact__c from MetaDataUpload__c where buildVersion__c = 'V3' and Ignore_In_Reports__c = false group by buildArtifact__c];
         AggregateResult[] arBuildArtifactsV4
-          = [SELECT buildArtifact__c from MetaDataUpload__c where buildVersion__c = 'V4' and Ignore_In_Reports__c = false and metadatatype__c ='md'  group by buildArtifact__c];
+          = [SELECT buildArtifact__c from MetaDataUpload__c where buildVersion__c = 'V4' and Ignore_In_Reports__c = false group by buildArtifact__c];
 
         for (AggregateResult ar : arBuildArtifactsV3)  {
             buildArtifactsV3.add((String) ar.get('buildArtifact__c'));
